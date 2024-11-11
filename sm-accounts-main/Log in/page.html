@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website</title>
+    <link rel="shortcut icon" href="website-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h2>Log in to your account</h2>
+            <form>
+                <div class="input-div">
+                    <div class="email-password-div">
+                        <input type="text" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="email-password-div password-div">
+                        <input type="password" placeholder="Password" id="password" required>
+                        <div class="password-controls">
+                            <strong onclick="show()" id="show">SHOW</strong>
+                            <strong onclick="hide()" id="hide">HIDE</strong>
+                        </div>
+                    </div>
+                    <h3 id="warning"></h3>
+                </div>
+                <div class="logIn" onclick="logIn()">
+                    <button>Log In</button>
+                </div>
+                <div class="forgot">
+                    <p>Forgot Password</p>
+                </div>
+            </form>
+            <div class="links-div">
+                <div class="links">
+                    <img src="google-logo.png" width="30px" alt="Google logo">
+                    <p>Continue with Google</p>
+                </div>
+
+                <div class="links">
+                    <img src="github-logo.png" width="30px" alt="GitHub logo">
+                    <p>Continue with Github</p>
+                </div>
+
+                <div class="links">
+                    <img src="firefox-logo.png" width="30px" alt="Firefox logo">
+                    <p>Continue with Firefox</p>
+                </div>
+                <div class="links">
+                    <img src="gmail-logo.png" width="30px" alt="Gmail logo">
+                    <p>Continue with Gmail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
